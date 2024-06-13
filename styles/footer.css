@@ -1,0 +1,136 @@
+#footer {
+    width: 100%;
+    height: max-content;
+    background: var(--white);
+    color: var(--black);
+    font-weight: 500;
+    margin-top: var(--top);
+    padding-bottom: 70px;
+}
+footer > div{
+    width: 95%;
+    max-width: var(--primary-width);
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    transition: all .6s ease;
+    border-bottom: 3px solid var(--light-grey);
+    padding-bottom: 10px;
+}
+#footer .logo{
+    margin: 0 ;
+    width: 150px !important;
+    height: auto;
+}
+.foot-note{
+    border: none;
+}
+.foot-note small{
+    margin: 10px;
+    font-weight: 300;
+}
+.foot-note small:first-child{
+    margin-right: auto;
+
+}
+.footer-desc p {
+    font-size: 1em;
+    font-weight: 400;
+    margin-top: 5px;
+    max-width: 80%;
+}
+#footer .col{
+    width: 100%;
+    max-width: 200px;
+    margin: 5px auto;
+    min-height: 200px;
+    padding: 5px 0;
+    
+}
+#footer .col:first-child{
+    max-width: max-content;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    min-height: max-content;
+    
+}
+#footer .col:last-child{
+    flex-grow: 1;
+    width:100%;
+    max-width: 300px;
+
+}
+.footer-desc {
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    text-align: left;
+}
+
+.contact a {   
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin:5px;
+}
+.contact a i{
+    font-weight: 800;
+    color: transparent;
+    margin-right: 2px;
+    font-style: normal;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: var(--black);
+}
+.contact a:hover {
+    color: var(--secondary-blue);
+}
+.contact a:hover i {
+    -webkit-text-stroke-color: var(--secondary-blue);
+}
+
+
+.col h2 {
+    font-size: 1.3em;
+    text-align: left;
+    margin: 1em 0 0 0;
+    text-transform: uppercase;
+    align-self: flex-start;
+}
+.col > a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.col p,
+.col > a {
+    font-size: 1em;
+    text-align: left;
+    margin: 1rem 0;
+    color: inherit;
+    
+    align-self: flex-start;
+}
+
+@media screen and (max-width: 698px) {
+  #footer .col:first-child{
+    justify-content: flex-start;
+  }
+	#footer .col{
+    flex: 0 0 80%;
+	  max-width: 80% !important;
+		height: max-content;
+		min-height: 200px;
+	}
+	#footer .col:not(:first-child){
+		max-width: max-content;
+		width:40%;
+	}
+}
