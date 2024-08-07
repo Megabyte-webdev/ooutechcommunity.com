@@ -21,6 +21,7 @@ function DayAndNight(){
  var rs = getComputedStyle(r);
 if(mode.classList.contains("active")){
     r.style.setProperty('--white', '#000');
+    r.style.setProperty('--secondary-white', '#464646');
     r.style.setProperty('--sec-white', '#333');
     r.style.setProperty('--black-opac-hover', 'rgba(255, 255, 255, .8)');
     r.style.setProperty('--black-opac', 'rgba(255, 255, 255, .6)');
@@ -28,6 +29,7 @@ r.style.setProperty('--black', 'white');
 r.style.setProperty('--grey', '#666');
 }else{
     r.style.setProperty('--white', '');
+    r.style.setProperty('--secondary-white', '');
     r.style.setProperty('--sec-white', '');
 r.style.setProperty('--black', '');
 r.style.setProperty('--black-opac-hover', '');
@@ -57,7 +59,7 @@ function activeNavigation(){
         let link_con = links[p].innerText.toLowerCase();
         if ( address.match(link_con)) {
             links[p].classList.add("active");
-        }else if(address.match("index")){
+        }else if(address.match("ooutech")){
             links[0].classList.add("active");
         }
     }

@@ -6,6 +6,7 @@
 }
 :root{
     --white: #FFFFFF;
+    --secondary-white: #f1efef;
     --black: #000000;
     --black-opac: rgba(0, 0, 0, .6);
     --black-opac-hover: rgba(0, 0, 0, .8);
