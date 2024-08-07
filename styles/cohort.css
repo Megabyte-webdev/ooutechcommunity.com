@@ -1,0 +1,125 @@
+header{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: var(--main-bg);
+    font-size: calc(1rem + 1vmin);
+    text-align: center;
+}
+.waitlist{
+    text-align: left;
+}
+.waitlist h1{
+    padding-left: 15px;
+    text-transform: uppercase;
+    border-left: 5px solid var(--primary-blue);
+}
+header h1{
+    max-width: 1000px;
+    width: 95%;
+}
+main > *{
+    margin-top: 20px;
+}
+main p{
+    font-size: .95rem;
+    max-width: 800px;
+    width: 95%;
+}
+main section{
+    margin: 2% auto;
+}
+main h2{
+    color: var(--medium-black);
+    font-size: calc(1.2rem + 1vmin);
+}
+main section ul,
+main section ol{
+    padding: 0 1rem;
+}
+main section ul li{
+    list-style-type: disc;
+}
+main section h4,
+main h3{
+    color: var(--medium-black);
+}
+main section ol li{
+    font-size: .95rem;
+}
+
+.cta-txt{
+    margin: 30px 0;
+}
+.cta-txt a{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.cta-txt a:hover{
+    color: orangered;
+}
+
+
+#form fieldset{
+    border: 1px solid var(--grey);
+    
+}
+#form > *{
+    margin: 20px 0;
+}
+#form fieldset section{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+#form fieldset legend{
+    font-weight: bold;
+    font-size: .8rem;
+    text-align: center;
+    color: var(--medium-black);
+}
+#form label{
+    max-width: 300px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+}
+#form input,
+#form select{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid var(--grey);
+}
+#form label b,
+#form legend b{
+    color: red;
+}
+#form > label,
+#form fieldset{
+    max-width: 650px;
+    width: 100%;
+}
+#form input[type="submit"]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    max-width: 200px;
+    height: 50px;
+    margin: 10px 0;
+    background-color: var(--secondary-blue);
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+#form input[type="submit"]:hover{
+    background-color: var(--dark-primary-blue);
+}

@@ -1,7 +1,7 @@
 #footer {
     width: 100%;
     height: max-content;
-    background: var(--white);
+    background: #f1efef;
     color: var(--black);
     font-weight: 500;
     margin-top: var(--top);

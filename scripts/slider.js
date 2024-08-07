@@ -1,7 +1,6 @@
 $(document).ready(function(){
 
   $('.slider').slick({
-
     autoplay: true,
     autoplaySpeed: 2000,
    coverflow: true,
@@ -9,13 +8,20 @@ $(document).ready(function(){
     centerMode: true, // Enable center mode
     centerPadding: '100px',
     slidesToShow: 3,
-    slidesToScroll: 'adaptive',
+    slidesToScroll: 'adapive',
     responsive: [
       {
         breakpoint: 900, // Adjust breakpoint as needed
         settings: {
           centerPadding: '60px',
           slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 700, // Adjust breakpoint as needed
+        settings: {
+          centerPadding: '100px',
+          slidesToShow: 1,
         }
       },
       {

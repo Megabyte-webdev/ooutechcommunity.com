@@ -33,6 +33,9 @@
 .nav.responsive ul {
 	color: var(--black);
 }
+.nav li{
+	list-style-type: none;
+}
 .mode {
 	margin-right: 10px;
 	margin-left: 10px;
@@ -53,7 +56,6 @@
 	bottom: 0;
 	left: 0;
 	height: 100%;
-
 	margin: auto;
 	background: #484848;
 	border-radius: 20px;
@@ -172,16 +174,13 @@ header {
 
 .sun-moon {
 	z-index: 2;
-
 	display: inline-block;
 	height: calc((45px/2) - 5px);
 	width: calc((45px/2) - 5px);
-
 	background: #FFFDF2;
 	border-radius: 50%;
 	transition: all 0.5s ease;
 	position: relative;
-
 	/* Default to Moon */
 	border: 2px solid #DEE2C6;
 }

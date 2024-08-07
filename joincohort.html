@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join The Waitlist- OTC</title>
+
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/cohort.css" />
+</head>
+<body>
+    <nav class="nav">
+        <img class="logo" src="./images/logo1.png" alt="logo">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="cohort.html">Cohort</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+        <div class="mode" onclick="DayAndNight()">
+            <div class="sun-moon">
+                <div class="dots"></div>
+            </div>
+            <div class="stars1"></div>
+            <div class="stars2"></div>
+            <div class="fill"></div>
+        </div>
+
+        <section class="icon" onclick="toggle()">
+
+            <div class="menu-toggle ">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+
+        </section>
+    </nav>
+    <header class="waitlist">
+        <h1>Join The WaitList </h1>
+    </header>
+    <main>
+        <h2>Join the Waitlist for OTC Cohort 2024</h2>
+        <p>
+            We are empowering the next generation in digital and tech skills by 2030. OOU Tech Community was created to empower everyone to be employable and entrepreneurial.
+        </p>
+        <p>
+            Our members become mentors, contribute to OTC development, the tech ecosystem and the world.
+        </p>
+        <p>
+            Join the waitlist for OTC cohort and also share this opportunity with your friends.
+        </p>
+        <p>
+            For any enquiry, kindly send an email to examole@gmail.com
+        </p>
+        <p>
+            Thank you
+        </p>
+        <form id="form" method="post" accept-charset="utf-8">
+            <fieldset>
+                <legend>
+                    Names<b>*</b>
+                </legend>
+                <section>
+                    <label for="name">First Name
+
+                        <input type="text" required id="firstname" />
+
+                    </label>
+                    <label for="lastname">Last Name
+
+                        <input type="text" required id="lastname" />
+
+                    </label>
+                </section>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Email<b>*</b>
+                </legend>
+                <section>
+                    <label for="email">Email
+
+                        <input type="email" required id="email" />
+
+                    </label>
+                    <label for="confirmmail">confirm email
+                        <input type="text" required id="confirmemail" />
+                    </label>
+                </section>
+            </fieldset>
+            <label for="">
+                <span>Phone number (add your country code e.g. +234)<b>*</b></span>
+                <input type="text" required id="mobile" />
+            </label>
+            <label for="">
+                <span>Gender<b>*</b></span>
+                <select name="gender" id="gender">
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                </select>
+            </label>
+            <input type="submit" value="Register">
+        </form>
+
+    </main>
+    <footer id="footer"></footer>
+
+
+    <!-- Scripts -->
+
+    <script src="./scripts/nav.js">
+    </script>
+
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/footer.js"></script>
+</body>
+</html>

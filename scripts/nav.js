@@ -53,10 +53,11 @@ let links = document.querySelectorAll(".nav a");
 function activeNavigation(){
         let address = window.location.href;
     for (let p = 0; p < links.length; p++) {
+        links[p].classList.remove("active");
         let link_con = links[p].innerText.toLowerCase();
-        if (address.match(link_con)) {
+        if ( address.match(link_con)) {
             links[p].classList.add("active");
-        }else if(address.match("OTC-New")){
+        }else if(address.match("index")){
             links[0].classList.add("active");
         }
     }

@@ -8,7 +8,7 @@ var html = `
 			<p>Partner With Us</p>
 			<p>Make A Donation</p>
 			<p>Summit</p>
-			<p>Cohorts</p>
+			<a href="cohort.html">Cohorts</a>
 		</div>
 		<div class="col">
 <h2>About us</h2>

@@ -1,94 +1,4 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    transition: background-color 300ms, border-color 300ms,color 200ms, background-image 300ms, background 300ms;
-}
-:root{
-    --white: #FFFFFF;
-    --black: #000000;
-    --black-opac: rgba(0, 0, 0, .6);
-    --black-opac-hover: rgba(0, 0, 0, .8);
-    --light-grey: #ddd;
-    --light-black: #222;
-    --grey: rgb(205, 204, 204);
-    --dark-grey: #666;
-    --medium-black: #333;
-    --tertiary-white: #fefefe;
-    --primary-blue: #404EED;
-    --dark-primary-blue: rgb(83, 5, 183);
-    --secondary-blue: #404EED;
-    --tertiary-blue:#bedaf1;
-        --primary-green: #053A3A;
-    --dark-primary-green: #011717;
-    --secondary-green: #20B2AA;
-    --tertiary-green:#bef1ed69;
-    --sec-white:#f1f0f0;
-    --pink: rgb(232, 201, 206);
-    --dark-pink: deeppink;
-    --transparent-white: rgba(255, 255, 255, .7);
-    --transparent-black: rgba(0, 0, 0, .6);
-    --full-width: 100%;
-    --top: 20px;
-    --black-grad:radial-gradient(circle at top left, var(--white) -50%, var( --medium-black) 40%);
-    --grad-2:linear-gradient(45deg, var(--pink) 10%,var(--primary-blue) 30%, var(--dark-grey)  80%);
-    --main-bg: radial-gradient(126.96% 275.84% at 90.24% 16.36%, rgb(52, 5, 183) 0px, rgba(67, 5, 183, 0.12) 0.01%, rgba(73, 5, 183, 0.08) 19.27%, rgba(73, 5, 183, 0.165) 30.73%, rgba(97, 5, 183, 0) 81.77%, rgba(67, 5, 183, 0) 100%);
-}
 
-::-webkit-scrollbar-thumb{
-   
-    background-color: var(--dark-grey);
-}
-::-webkit-scrollbar{
-    width: 4px;
-    height: 6px;
-    background-color: var(--white);
-}
-html,body{
-    scroll-behavior: smooth;
-}
-body{
-	position: relative;
-    width: 100vw;
-    height: 10vh;
-    overflow-x: hidden;
-    background-color: var(--white);
-    color: var(--black);
-    font-family: Mulish, sans-serif;
-}
-img {
-    overflow-clip-margin: content-box;
-    overflow: clip;
-}
-button,
-input[type="submit"]{
-    background: var(--white);
-    color: var(--black);
-    border: none;
-    outline: none;
-    padding: 15px;
-    margin: 0 10px;
-    border-radius: 10px;
-    text-transform: capitalize;
-    transition: all 200ms;
-    cursor: pointer;
-}
-a{
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    transition: all 200ms;
-}
-h1,h2,h3,h4,h5,h6{
-    text-transform: capitalize;
-}
-li{
-    list-style-type: none;
-}
-img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{ display: none; }
-.animate.is-visible{
-	animation: fadeInUp 1s ease;
-}
 .main-heading.animate.is-visible,
 .hero-heading.animate.is-visible{
 	animation: fadeInLeft 2s ease;
@@ -152,11 +62,7 @@ section .btn:hover {
     transform: translate(-2px, -2px);
     box-shadow: none;
 }
-.section{
-    width: var(--full-width);
-    max-height: max-content;
-    margin: 20px auto 0 auto;
-}
+
 #about,
 #services,
 #goal{
@@ -212,14 +118,12 @@ header section{
     max-width: 1145px;
     height: 420px;
     overflow: hidden;
-   
 }
 .slider::-webkit-scrollbar{
     width: 0;
     height: 0;
 }
 .slider div{
-    
 	height: 450px;
     border-radius: 10px 10px 0 0 ;
     margin: 10px !important;
@@ -260,7 +164,7 @@ header section{
 .slick-dots {
   list-style: none; /* Remove default list styles */
   text-align: center; /* Center the dots horizontally */
-  margin-top: 20px; /* Adjust the top margin */
+  margin-top: 5px; /* Adjust the top margin */
   position: absolute; /* Position the arrows absolutely within the slider */
   top: 90%; /* Center vertically */
   z-index: 10000;
