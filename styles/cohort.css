@@ -16,7 +16,7 @@ header{
     border-left: 5px solid var(--primary-blue);
 }
 header h1{
-    max-width: 1000px;
+    max-width: 1200px;
     width: 95%;
 }
 main > *{
