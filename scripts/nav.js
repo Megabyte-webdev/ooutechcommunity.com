@@ -59,7 +59,7 @@ function activeNavigation(){
         let link_con = links[p].href;
         if ( address.match(link_con)) {
             links[p].classList.add("active");
-        }else if ( !address.match(".html") || address.match("index")){
+        }else if ( !address.match(".html") || (!address.match(".html") && address.match("ooutechcommunity"))  || address.match("index")){
             links[0].classList.add("active");
         }
     }
