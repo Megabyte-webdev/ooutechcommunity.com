@@ -308,7 +308,7 @@ header {
 		margin-top: 20px !important;
 	}
 	.nav.responsive {
-		height: 280px;
+		height: 320px;
 		transition: height 300ms;
 	}
 	.nav li {
