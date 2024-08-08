@@ -6,21 +6,28 @@ $(document).ready(function(){
    coverflow: true,
     dots: true,
     centerMode: true, // Enable center mode
-    centerPadding: '100px',
+    centerPadding: '20px',
     slidesToShow: 3,
     slidesToScroll: 'adapive',
     responsive: [
       {
-        breakpoint: 900, // Adjust breakpoint as needed
+        breakpoint: 1100, // Adjust breakpoint as needed
         settings: {
           centerPadding: '60px',
           slidesToShow: 2,
         }
       },
       {
-        breakpoint: 700, // Adjust breakpoint as needed
+        breakpoint: 1000, // Adjust breakpoint as needed
         settings: {
-          centerPadding: '100px',
+          centerPadding: '45px',
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 800, // Adjust breakpoint as needed
+        settings: {
+          centerPadding: '150px',
           slidesToShow: 1,
         }
       },
@@ -28,7 +35,7 @@ $(document).ready(function(){
         breakpoint: 650, // Adjust breakpoint as needed
         settings: {
           slidesToShow: 1,
-          centerPadding: '40px',
+          centerPadding: '80px',
         }
       },
       {
