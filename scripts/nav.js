@@ -10,9 +10,10 @@ let icon = document.querySelector(".icon");
         menu.className = "menu-toggle";
         nav.classList.remove("responsive");
     }
-    nav.onmouseleave = function () {
-        menu.className = "menu-toggle";
-        nav.classList.remove("responsive");    }
+    // nav.onmouseleave = function () {
+    //     menu.className = "menu-toggle";
+    //     nav.classList.remove("responsive");    
+    // }
 }
 function DayAndNight(){
     var r = document.querySelector(':root');
@@ -57,8 +58,8 @@ function activeNavigation(){
     for (let p = 0; p < links.length; p++) {
         links[p].classList.remove("active");
         let link_con = links[p].innerText.toLowerCase();
-        if ( address.match(link_con)) {
-            links[p].classList.add("active");
+        if (address.match(link_con)){
+         links[p].classList.add("active");
         }else if ( !address.match(".html") || (!address.match(".html") && address.match("ooutechcommunity"))  || address.match("index")){
             links[0].classList.add("active");
         }
