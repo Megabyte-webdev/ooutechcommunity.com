@@ -1,4 +1,8 @@
 window.onload=()=>{
+    let share =document.querySelector(".share a");
+if(share){
+  share.href=`whatsapp://send?text=Check out this page: ${encodeURIComponent(window.location.href)}`
+}
 let directors= document.querySelectorAll('.floating-btn');
 let modalContent=document.querySelector('.modal-ad .content');
 let modal=document.querySelector('.modal-ad');
@@ -16,10 +20,11 @@ function waitForMs(ms) {
     return new Promise(resolve => setTimeout(resolve, ms))
 
   }
-
+if(back){
 back.onclick = function(e) {
             modal.classList.remove("active");
           }
+}
     
 directors.forEach((elem)=>{
 	
@@ -33,31 +38,7 @@ elem.onclick=function(){
 	
         }
         
-})
-
-  
-
-    let elementsToShow = document.querySelectorAll('.show-on-scroll');
-    let body = document.querySelector('body') || document.body;
-
-function loadAnims() {
-        var elementsToShow = document.querySelectorAll('.animate');
-        elementsToShow.forEach(function (element) {
-            if (isElementInViewport(element)) {
-                element.classList.add('is-visible');
-            }
-        });
-
-    }
-    body.onscroll = loadAnims;
-    function isElementInViewport(el) {
-
-        var rect = el.getBoundingClientRect();
-        return ((rect.top <= 0 && rect.bottom >= 0) || (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) && rect.top <= (window.innerHeight || document.documentElement.clientHeight)) || (rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)));
-    }
-    loadAnims()
-    
-   
+})   
 
 }
 

@@ -226,7 +226,7 @@ header {
 	height: auto;
 }
 .nav ul {
-	flex: 0 0 30%;
+	flex: 1 0 30%;
 	display: flex;
 	align-items: center;
 	justify-content: center;

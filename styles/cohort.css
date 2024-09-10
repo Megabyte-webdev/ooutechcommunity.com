@@ -1,112 +1,159 @@
-header{
+header {
     height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: var(--main-bg);
-    font-size: calc(1rem + 1vmin);
+    
     text-align: center;
+
 }
-.waitlist{
-    text-align: left;
+
+.hero-curr h1 p{
+    font-size: calc(.9rem + 1.5vmin);
+    margin: 0 auto;
+    line-height: 1.5;
 }
-.waitlist h1{
-    padding-left: 15px;
-    text-transform: uppercase;
-    border-left: 5px solid var(--primary-blue);
+
+.hero-curr h1 >p.one {
+    color: var(--primary-blue);
+    font-size: calc(1.2rem + 1.5vmin);
 }
-header h1{
-    max-width: 1200px;
+
+header h1 {
+    max-width: 1000px;
     width: 95%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-size: calc(1rem + 2vmin);
 }
-main > *{
-    margin-top: 20px;
-}
-main p{
+
+main p {
     font-size: .95rem;
     max-width: 800px;
     width: 95%;
 }
-main section{
+
+main>p {
+    margin: 10px 0;
+}
+
+main section {
     margin: 2% auto;
 }
-main h2{
-    color: var(--medium-black);
+
+main .main-heading {
+    color: var(--black);
+
     font-size: calc(1.2rem + 1vmin);
 }
+
+main h2 {
+    color: var(--medium-black);
+    font-size: calc(.8rem + 1vmin);
+}
+
 main section ul,
-main section ol{
+main section ol {
     padding: 0 1rem;
 }
-main section ul li{
+
+main section ul li {
     list-style-type: disc;
 }
+
 main section h4,
-main h3{
+main h3 {
     color: var(--medium-black);
 }
-main section ol li{
+
+main section ol li {
     font-size: .95rem;
 }
 
-.cta-txt{
+.cta-txt {
     margin: 30px 0;
 }
-.cta-txt a{
+
+.cta-txt a,
+.share a {
     text-decoration: underline;
     font-style: italic;
 }
 
-.cta-txt a:hover{
+.cta-txt a:hover,
+.share a:hover {
     color: orangered;
 }
 
+#form fieldset {
+    border: none;
+    border-top: 1px solid var(--grey);
+}
 
-#form fieldset{
-    border: 1px solid var(--grey);
-    
+#form>* {
+    margin: 0px 0;
 }
-#form > *{
-    margin: 20px 0;
-}
-#form fieldset section{
+
+#form fieldset section {
     width: 100%;
     height: max-content;
     display: flex;
+    gap: 0 10px;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+    align-items: stretch;
 }
-#form fieldset legend{
+
+#form fieldset legend {
     font-weight: bold;
     font-size: .8rem;
     text-align: center;
     color: var(--medium-black);
 }
-#form label{
+
+#form label {
+    flex: 1 1 100px;
     max-width: 300px;
     width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     font-weight: bold;
+    margin: 0;
 }
+
+#form .notice {
+    color: red;
+    font-size: 9px;
+}
+
+#form .notice.confirmed {
+    color: green !important;
+}
+
 #form input,
-#form select{
+#form select {
     padding: 10px;
     width: 100%;
     border: 1px solid var(--grey);
 }
+
+#form label span {
+    text-transform: capitalize;
+}
+
 #form label b,
-#form legend b{
+#form legend b {
     color: red;
 }
-#form > label,
-#form fieldset{
+
+#form>label,
+#form fieldset {
     max-width: 650px;
     width: 100%;
+    margin-top: 20px;
 }
-#form input[type="submit"]{
+
+#form input[type="submit"] {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,6 +167,18 @@ main section ol li{
     font-size: 1rem;
     transition: background-color 0.3s;
 }
-#form input[type="submit"]:hover{
+
+#form input[type="submit"]:hover {
     background-color: var(--dark-primary-blue);
+}
+
+.campus {
+    display: none;
+    height: 0px;
+    overflow: hidden;
+}
+
+.campus.visible {
+    height: max-content;
+    display: block;
 }

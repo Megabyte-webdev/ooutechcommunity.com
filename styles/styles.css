@@ -1,35 +1,24 @@
-
-.main-heading.animate.is-visible,
-.hero-heading.animate.is-visible{
-	animation: fadeInLeft 2s ease;
-}
-.hero-desc.animate.is-visible{
-	animation: fadeInRight 2s ease;
-}
-.sp.animate.is-visible{
-	animation: zoomIn 1s ease;
-}
-.round.animate.is-visible{
-	animation: zoomIn 1s ease;
-}
-.btn{
+.btn {
     min-width: 100px;
     padding: 15px;
     border: 2px solid var(--white);
     border-radius: 10px;
 }
-.btn.bg{
+
+.btn.bg {
     border-color: var(--primary-blue);
     background-color: var(--primary-blue);
     color: var(--white) !important;
 }
-.btn.bg:hover{
+
+.btn.bg:hover {
     color: var(--primary-blue) !important;
 }
-.floating-btn{
-	position: fixed;
+
+.floating-btn {
+    position: fixed;
     bottom: 0;
-    right:0;
+    right: 0;
     margin: 1rem;
     background: var(--primary-green);
     width: 50px;
@@ -42,21 +31,25 @@
     align-items: center;
     z-index: 10000;
 }
-#discord-btn{
-	left:0;
-	right: auto;
-	background: var(--secondary-blue);
+
+#discord-btn {
+    left: 0;
+    right: auto;
+    background: var(--secondary-blue);
 }
+
 .wa-messenger-svg-whatsapp {
     fill: white;
     width: 41px;
     height: 50px;
 }
+
 .bi-discord {
     fill: white;
     width: 30px;
     height: 30px;
 }
+
 section .btn:hover {
     background: transparent !important;
     transform: translate(-2px, -2px);
@@ -65,145 +58,184 @@ section .btn:hover {
 
 #about,
 #services,
-#goal{
+#goal {
     padding-top: calc(var(--top)*2);
 }
-header{
-    background-image: var(--main-bg);
-    height: max-content ;
-}
-header section{
+
+header section {
     min-height: 450px;
 }
-.hero-section >*{
+
+.hero-section>* {
     line-height: 150%;
     margin: 1rem auto;
 
 }
-.hero-section{
+
+.hero-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-.hero-heading{
+
+.hero-heading {
     font-weight: 700;
     width: 90%;
     max-width: 900px;
-    font-size: calc(1rem + 4vmin);
+    font-size: calc(.9rem + 3vmin);
     margin-bottom: 10px;
     text-transform: capitalize;
     letter-spacing: 1px;
+    color: var(--black);
 }
-.hero-heading em{
+
+.hero-heading em {
     color: var(--primary-blue);
     font-style: normal;
 }
-.hero-desc{
+
+.hero-desc {
     width: 80%;
     max-width: 900px;
     font-size: 1em;
-    margin: 10px 0;  
+    margin: 10px 0;
     letter-spacing: 1px;
+    color: var(--black);
 }
 
 
-.slider{
+.slider {
     display: flex;
-   justify-content: center;
-    align-items: center ;
-   margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     width: 100%;
     max-width: 1145px;
     height: 420px;
     overflow: hidden;
 }
-.slider::-webkit-scrollbar{
+
+.slider::-webkit-scrollbar {
     width: 0;
     height: 0;
 }
-.slider div{
-	height: 450px;
-    border-radius: 10px 10px 0 0 ;
+
+.slider div {
+    height: 450px;
+    border-radius: 10px 10px 0 0;
     margin: 10px !important;
 }
-.slider img{
- border-radius: 10px 10px 0 0;
- width: 100%;
+
+.slider img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
     max-width: 350px;
     width: 90%;
     height: 350px;
     object-fit: cover;
-}	
+}
+
 /* Customize navigation arrows */
-.slick-prev, .slick-next {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-  font-size: 0px; /* Set the size of the arrows */
-  color: #fff; /* Set the color of the arrows */
-  background-color: rgba(0, 0, 0, 0.5); /* Set the background color of the arrows */
-  border: none; /* Remove border */
-  border-radius: 50%; /* Make the arrows circular */
-  padding: 10px; /* Adjust the padding of the arrows */
-  position: absolute; /* Position the arrows absolutely within the slider */
-  top: 50%; /* Center vertically */
-  z-index: 10000;
-  transform: translateY(-50%); /* Center vertically */
+.slick-prev,
+.slick-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0px;
+    /* Set the size of the arrows */
+    color: #fff;
+    /* Set the color of the arrows */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Set the background color of the arrows */
+    border: none;
+    /* Remove border */
+    border-radius: 50%;
+    /* Make the arrows circular */
+    padding: 10px;
+    /* Adjust the padding of the arrows */
+    position: absolute;
+    /* Position the arrows absolutely within the slider */
+    top: 50%;
+    /* Center vertically */
+    z-index: 10000;
+    transform: translateY(-50%);
+    /* Center vertically */
 }
 
 .slick-prev {
-  left: 5px; /* Position the previous arrow to the left */
+    left: 5px;
+    /* Position the previous arrow to the left */
 }
 
 .slick-next {
-  right: 5px; /* Position the next arrow to the right */
+    right: 5px;
+    /* Position the next arrow to the right */
 }
 
 /* Customize navigation dots */
 .slick-dots {
-  list-style: none; /* Remove default list styles */
-  text-align: center; /* Center the dots horizontally */
-  margin-top: 5px; /* Adjust the top margin */
-  position: absolute; /* Position the arrows absolutely within the slider */
-  top: 90%; /* Center vertically */
-  z-index: 10000;
+    list-style: none;
+    /* Remove default list styles */
+    text-align: center;
+    /* Center the dots horizontally */
+    margin-top: 5px;
+    /* Adjust the top margin */
+    position: absolute;
+    /* Position the arrows absolutely within the slider */
+    top: 90%;
+    /* Center vertically */
+    z-index: 10000;
 }
 
 .slick-dots li {
-  display: inline-block; /* Display dots in a line */
+    display: inline-block;
+    /* Display dots in a line */
 }
 
 .slick-dots li button {
-  font-size: 0px; /* Set the size of the dots */
-  color: #fff; /* Set the color of the dots */
-  background-color: rgba(0, 0, 0, 0.5); /* Set the background color of the dots */
-  border: none; /* Remove dot borders */
-  border-radius: 50%; /* Make dots circular */
-  width: 12px; /* Set the width of the dots */
-  height: 12px; /* Set the height of the dots */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 5px; /* Adjust the margin between dots */
-  cursor: pointer; /* Add cursor pointer on hover */
-  padding: 0;
-}
-/* Customize active dot */
-.slick-dots li.slick-active button {
-  background-color: var(--black); /* Change background color of active dot */
-  color: rgba(0, 0, 0, 0.5); /* Change color of active dot */
+    font-size: 0px;
+    /* Set the size of the dots */
+    color: #fff;
+    /* Set the color of the dots */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Set the background color of the dots */
+    border: none;
+    /* Remove dot borders */
+    border-radius: 50%;
+    /* Make dots circular */
+    width: 12px;
+    /* Set the width of the dots */
+    height: 12px;
+    /* Set the height of the dots */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    /* Adjust the margin between dots */
+    cursor: pointer;
+    /* Add cursor pointer on hover */
+    padding: 0;
 }
 
-.about{
+/* Customize active dot */
+.slick-dots li.slick-active button {
+    background-color: var(--black);
+    /* Change background color of active dot */
+    color: rgba(0, 0, 0, 0.5);
+    /* Change color of active dot */
+}
+
+.about {
     margin: 0px auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
-.about >section{
+
+.about>section {
     flex: 0 0 40%;
     width: 80%;
     display: flex;
@@ -211,59 +243,65 @@ header section{
     align-items: center;
     margin-top: var(--top);
     line-height: 150%;
-    
+
 }
-.main-heading{
+
+.main-heading {
     max-width: max-content;
     font-size: 30px;
     border-bottom: 1px solid darkred;
     border-width: 50%;
-    margin: 0 ;
+    margin: 0;
 }
-.main-desc{
+
+.main-desc {
     max-width: max-content;
     text-align: center;
     margin: 0 auto;
 }
-.about .main-heading{
-	margin-bottom: 1rem !important;
+
+.about .main-heading {
+    margin-bottom: 1rem !important;
 }
 
-.about div{
-	max-width: 300px;
-	min-height: 150px;
-	width: 80%;
-	background: var(--secondary-blue);
-	color: var(--white);
+.about div {
+    max-width: 300px;
+    min-height: 150px;
+    width: 80%;
+    background: var(--secondary-blue);
+    color: var(--white);
     margin: 10px 0;
-border-radius: 40px 0 40px 0;
+    border-radius: 40px 0 40px 0;
     transition: all 200ms;
     padding: 10px;
 }
 
-.about div:nth-child(2n){
-	background: var(--sec-white);
-	color: var(--black) !important;
-	border-radius: 0px 40px 0px 40px;
+.about div:nth-child(2n) {
+    background: var(--sec-white);
+    color: var(--black) !important;
+    border-radius: 0px 40px 0px 40px;
 }
-.about div h3{
+
+.about div h3 {
     font-size: 20px;
     margin: 10px;
 }
-.about div p{
+
+.about div p {
     font-size: 14px;
     margin: 10px;
 }
 
-.img-section{
+.img-section {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    
+
     margin: 20px auto;
 }
-.img-section img{
+
+.img-section img {
     border: 4px dashed var(--primary-blue);
     width: 80%;
     max-width: 500px;
@@ -271,51 +309,63 @@ border-radius: 40px 0 40px 0;
     border-radius: 50%;
     object-fit: cover;
 }
-.main-section{
+
+.main-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+
 }
-.main-section > *{
+
+.main-section>* {
     flex: 0 0 calc(45% - 10px);
-    margin: 10px auto;   
+    margin: 10px auto;
     min-height: 400px;
     display: flex;
     padding: 10px;
     flex-direction: column;
     justify-content: center;
 }
-.main-section .btn{
+
+.main-section .btn {
     max-width: max-content;
     margin-top: 1em;
     margin-left: 0;
 }
-.main-section .btn:hover{
+
+.main-section .btn:hover {
     color: var(--white);
 }
-.reach-out-section{
+
+.reach-out-section {
     background-color: var(--secondary-blue);
-    color: var(--white);
+
     align-items: center;
 }
-.reach-out-section i img{
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
+.reach-out-section .hero-heading,
+.reach-out-section .hero-desc{
+    color: var(--white) !important;
 }
-.reach-out-section .sp{
+.reach-out-section i img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.reach-out-section .sp {
     align-items: center;
-    
+
 }
-.reach-out-section .sp img{
+
+.reach-out-section .sp img {
     max-width: 400px;
     width: 90%;
     height: 70%;
     border-radius: 10px;
 }
-.reach-out-section .sp div{
+
+.reach-out-section .sp div {
     width: 100%;
     max-width: 450px;
     min-height: 200px;
@@ -326,38 +376,45 @@ border-radius: 40px 0 40px 0;
     background-color: var(--tertiary-blue);
     color: var(--secondary-blue);
     line-height: 100%;
-    font-size: 1em;
+
     padding: 20px;
     border-radius: 10px;
     transform: translateY(-20px);
 }
-.sp p{
-    margin: 10px;
+
+.sp p {
+    margin: 6px;
+    font-size: .9rem;
     display: list-item;
     font-weight: bold;
 }
-.service{
+
+.service {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: max-content;
 }
-#services img{
-	aspect-ratio: 1/1;
-	object-fit: cover;
+
+#services img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
-.service >p,
-.service >h1{
+
+.service>p,
+.service>h1 {
     line-height: 150%;
     max-width: max-content;
     margin: 20px auto;
 }
-.service >p{
-  width: 80%;
+
+.service>p {
+    width: 80%;
     max-width: 600px;
     font-size: .8em;
 }
-.service-cards{
+
+.service-cards {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
@@ -365,30 +422,33 @@ border-radius: 40px 0 40px 0;
     padding-bottom: var(--top);
     min-height: max-content;
 }
-.service-cards .card{
-  width:90%;
+
+.service-cards .card {
+    width: 90%;
     max-width: 300px;
     height: 350px;
     margin: 10px auto;
     position: relative;
-    border-radius: 10px 10px 0 0 ;
+    border-radius: 10px 10px 0 0;
     transition: all 200ms;
 }
-.card img{
+
+.card img {
     position: relative;
-    top:0;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
-    width:100%;
-    height:100%;
-    border-radius: 10px 10px 0 0 ;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
     border: 2px solid var(--primary-blue);
 }
-.card article{
+
+.card article {
     position: absolute;
-   top: 50%;
+    top: 50%;
     height: 200px;
     padding: 10px;
     background-color: var(--white);
@@ -396,31 +456,36 @@ border-radius: 40px 0 40px 0;
     display: flex;
     flex-direction: column;
     border: 2px solid var(--primary-blue);
-    border-radius: 20px 20px 0 0 ;
+    border-radius: 20px 20px 0 0;
     transform: translateY(-20px);
     line-height: 120%;
 }
-.card article h4{
+
+.card article h4 {
     font-size: 1.1em;
 }
-.card article p{
+
+.card article p {
     margin-top: 5px;
     font-size: .8em;
 }
-.card .btn{
+
+.card .btn {
     align-self: flex-end;
     margin-top: auto;
     padding: 5px !important;
     color: var(--primary-blue);
     font-size: 1em;
 }
+
 .card:hover,
-.about div:hover{
+.about div:hover {
     transform: translatey(-2px);
     box-shadow: 2px 2px 10px var(--dark-grey);
 }
+
 .gallery,
-.team{
+.team {
     height: max-content;
     display: flex;
     flex-direction: column;
@@ -428,10 +493,11 @@ border-radius: 40px 0 40px 0;
 }
 
 .gallery .main-heading,
-.team .main-heading{
+.team .main-heading {
     margin: 20px auto;
 }
-.gallery .images{
+
+.gallery .images {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-template-rows: repeat(auto-fill minmax(150px, 1fr));
@@ -440,43 +506,47 @@ border-radius: 40px 0 40px 0;
     align-items: center;
     gap: 15px;
     width: 90%;
-    min-height: 500px; 
+    min-height: 500px;
     max-width: 800px;
     margin: 0 auto;
     margin-top: var(--top);
 }
-.gallery .btn{
+
+.gallery .btn {
     grid-column: 1/-1;
     justify-self: flex-end;
     color: var(--primary-blue);
     font-weight: bold;
 }
 
-.gallery .images img{
+.gallery .images img {
     width: 100%;
-    height: 100% ;
+    height: 100%;
     border-radius: 10px;
     aspect-ratio: 1/1;
-	object-fit: cover;
+    object-fit: cover;
     outline: 3px solid var(--primary-blue);
     transition: all 200ms;
 }
-.gallery .images img:hover{
-	outline-offset: 2px;
+
+.gallery .images img:hover {
+    outline-offset: 2px;
 }
 
-.gallery .images img:nth-child(1){
+.gallery .images img:nth-child(1) {
     grid-column: span 2;
     grid-row: span 2;
     width: 100%;
-    height: 100%;    
+    height: 100%;
 }
-.team{
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.15) 38%, rgba(0, 0, 0, 0.4) 100%);
+
+.team {
+    background: var(--grey-gradient);
     color: var(--black);
     padding: 10px;
 }
-.team-cards{
+
+.team-cards {
     max-width: 1140px;
     margin-top: var(--top);
     display: flex;
@@ -485,21 +555,23 @@ border-radius: 40px 0 40px 0;
     align-items: center;
     gap: 20px;
 }
-.team-cards .team-card{
+
+.team-cards .team-card {
     width: 80%;
     max-width: 300px;
     height: 400px;
     color: var(--white);
     position: relative;
 }
-.team img{
+
+.team img {
     position: inherit;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.team-card article{
+.team-card article {
     position: absolute;
     padding: 15px;
     width: 100%;
@@ -528,9 +600,11 @@ border-radius: 40px 0 40px 0;
     transition: all 300ms;
     transition-delay: 200ms;
 }
-.social li{
+
+.social li {
     list-style: none;
 }
+
 .social li a {
     height: 40px;
     width: 40px;
@@ -543,98 +617,115 @@ border-radius: 40px 0 40px 0;
     position: relative;
 
 }
-.social img{
+
+.social img {
     width: 20px;
     height: 20px;
-}   
-.team-card:hover article{
+}
+
+.team-card:hover article {
     height: 150px;
     background: linear-gradient(var(black-opac-hover), rgb(26, 36, 28));
 }
-.team-card:hover .social{
-   display: flex;
-}
-.team-card:hover .social a{
-animation: fadeInUp .3s ease;
+
+.team-card:hover .social {
+    display: flex;
 }
 
-.team-card h2{
+.team-card:hover .social a {
+    animation: fadeInUp .3s ease;
+}
+
+.team-card h2 {
     font-size: 1.3em;
     margin-bottom: 5px;
     text-transform: capitalize;
 }
-.team-card p{
+
+.team-card p {
     text-transform: capitalize;
     font-size: .9em;
 }
+
 /*   media query   */
 @media screen and (min-width: 717px) and (max-width: 800px) {
-.gallery .images{
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
-    grid-template-rows: repeat(auto-fill minmax(150px, 1fr)) !important;
-}
+    .gallery .images {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+        grid-template-rows: repeat(auto-fill minmax(150px, 1fr)) !important;
+    }
 
 }
-@media screen and (min-width: 800px){
-    .img-section img{
+
+@media screen and (min-width: 800px) {
+    .img-section img {
         transform: scale(1.2);
     }
 }
 
 @media screen and (max-width: 800px) {
-    .section > *{
-    min-height: max-content;
-    margin: 10px auto;
-}
-.slide {
-	height: 350px;
-}
-.about >section{
-    flex: 1 1 auto;
-    margin-left: auto;
-margin-right: auto;
-display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.about .main-heading{
-    text-align: center;
-    margin: 0 auto;
-}
-.main-section > *{
-    flex: 0 0 calc(90% - 10px);
-    margin: 10px auto;   
-}
-.motive-section >*:first-child{
-    flex: 1 1 80%;
-}
-.reach-out-section .sp div{
-    font-size: 1em;
-    width: 100%;
+    .section>* {
+        min-height: max-content;
+        margin: 10px auto;
+    }
 
-    height: 150px;
-}
-.main-section >*:first-child{
-    align-items: center;
-    text-align: center;
-}
-.gallery .images{
+    .slide {
+        height: 350px;
+    }
 
-    display: grid;
+    .about>section {
+        flex: 1 1 auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-}
+    .about .main-heading {
+        text-align: center;
+        margin: 0 auto;
+    }
 
-.team-card article{
-    padding: 20px;
-    width: 100%;
-    height: 150px;
-    background: linear-gradient(var(black-opac-hover), rgb(26, 36, 28));
-}
-.team-card .social{
-   display: flex;
-}
-.team-card .social a{
-animation: fadeInUp .3s ease;
-}
+    .main-section>* {
+        flex: 0 0 calc(90% - 10px);
+        margin: 10px auto;
+    }
+
+    .motive-section>*:first-child {
+        flex: 1 1 80%;
+    }
+
+    .reach-out-section .sp div {
+        font-size: 1em;
+        width: 100%;
+
+        height: 150px;
+    }
+
+    .main-section>*:first-child {
+        align-items: center;
+        text-align: center;
+    }
+
+    .gallery .images {
+
+        display: grid;
+
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .team-card article {
+        padding: 20px;
+        width: 100%;
+        height: 150px;
+        background: linear-gradient(var(black-opac-hover), rgb(26, 36, 28));
+    }
+
+    .team-card .social {
+        display: flex;
+    }
+
+    .team-card .social a {
+        animation: fadeInUp .3s ease;
+    }
 }

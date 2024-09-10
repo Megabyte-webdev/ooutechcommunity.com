@@ -7,17 +7,31 @@
 
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/nav.css" />
-    <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/cohort.css" />
+    <link rel="stylesheet" href="./styles/animate.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    
+
+    <script src="./scripts/main.js"></script>
 </head>
 <body>
+   <div id="loader">
+    <h2>Please wait while we process your registration for the cohort...</h2>
+    <div>
+        <div class="inner one"></div>
+        <div class="inner two"></div>
+        <div class="inner three"></div>
+    </div>
+    </div>
     <nav class="nav">
         <img class="logo" src="./images/logo1.png" alt="logo">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="index.html#about">about</a></li>
+            <li><a href="index.html#services">Services</a></li>
             <li><a href="cohort.html">Cohort</a></li>
+            <li><a href="joincohort.html">Join Cohort</a></li>
+            <li><a href="cohortdocs.html"> Cohort Curriculums</a></li>
             <li><a href="#footer">Contact</a></li>
         </ul>
         <div class="mode" onclick="DayAndNight()">
@@ -40,26 +54,26 @@
         </section>
     </nav>
     <header class="waitlist">
-        <h1>Join The Cohort </h1>
+        <h1 class="animate light-speed-out">Take Your Place in Our Dynamic Cohort </h1>
     </header>
     <main>
-        <h2>Join the Waitlist for OTC Cohort 2024</h2>
-        <p>
-            We are empowering the next generation in digital and tech skills by 2030. OOU Tech Community was created to empower everyone to be employable and entrepreneurial.
+        <h2 class="main-heading animate fade-in-right">Join the Waitlist for OTC Cohort 2024</h2>
+        <p class="animate fade-in-up">
+            We are empowering the next generation in digital and tech skills by this year(2024). OOU Tech Community was created to empower everyone to be employable and entrepreneurial.
         </p>
-        <p>
+        <p class="animate fade-in-up">
             Our members become mentors, contribute to OTC development, the tech ecosystem and the world.
         </p>
-        <p>
+        <p class="animate fade-in-up">
             Join the waitlist for OTC cohort and also share this opportunity with your friends.
         </p>
-        <p>
-            For any enquiry, kindly send an email to examole@gmail.com
+        <p class="animate fade-in-up">
+            For any enquiry, kindly send an email to <a style="color: blue; font-style: italic" href="mailto:ooutechcommunity@gmail.com">ooutechcommunity@gmail.com</a>
         </p>
-        <p>
+        <p class="animate fade-in-up">
             Thank you
         </p>
-        <form id="form" method="post" accept-charset="utf-8">
+        <form id="form">
             <fieldset>
                 <legend>
                     Names<b>*</b>
@@ -67,12 +81,12 @@
                 <section>
                     <label for="name">First Name
 
-                        <input type="text" required id="firstname" />
+                        <input type="text" minlength="3" maxlength="20" required id="firstname" />
 
                     </label>
                     <label for="lastname">Last Name
 
-                        <input type="text" required id="lastname" />
+                        <input type="text" minlength="3" maxlength="20" required id="lastname" />
 
                     </label>
                 </section>
@@ -88,23 +102,63 @@
 
                     </label>
                     <label for="confirmmail">confirm email
-                        <input type="text" required id="confirmemail" />
+                        <input type="email" required id="confirmemail" />
                     </label>
                 </section>
             </fieldset>
-            <label for="">
+            <label for="mobile">
                 <span>Phone number (add your country code e.g. +234)<b>*</b></span>
-                <input type="text" required id="mobile" />
+                <input type="tel" name="phone" maxlength="14" minlength="7" id="mobile" required />
             </label>
-            <label for="">
+            <label for="gender">
                 <span>Gender<b>*</b></span>
-                <select name="gender" id="gender">
+                <select name="gender" id="gender" required>
+                    <option value="" disabled selected>Choose an option</option>
                     <option value="female">Female</option>
                     <option value="male">Male</option>
                 </select>
             </label>
-            <input type="submit" value="Register">
+
+            <label for="niche">
+                <span>tech niche<b>*</b></span>
+                <select name="niche" id="niche" required>
+                    <option value="" disabled selected>Choose an option</option>
+                    <option value="software development">Software Development</option>
+                    <option value="cyber security">Cyber Security</option>
+                    <option value="data science">Data Science</option>
+                    <option value="embedded systems">Embedded systems</option>
+                    <option value="video editing">Video editing</option>
+                    <option value="graphics design">Graphics Design</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
+                </select>
+            </label>
+            <label for="niche">
+                <span>Student of OOU<b>*</b></span>
+                <select name="student" id="student" required>
+                    <option value="" disabled selected>Choose an option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </label>
+            <label for="campus" class="campus">
+                <span>Campus<b>*</b></span>
+                <select name="campus" id="campus" required>
+                    <option value="" disabled selected>Choose an option</option>
+                    <option value="Ago-Iwoye">Ago-Iwoye</option>
+                    <option value="Ibogun">Ibogun</option>
+                    <option value="Ayetoro">Ayetoro</option>
+                    <option value="Shagham">Shagham</option>
+                    <option value="Others">Others</option>
+
+                </select>
+            </label>
+
+            <label>
+                <input id="register" type="submit" value="Register">
+            </label>
         </form>
+
+
 
     </main>
     <footer id="footer"></footer>
@@ -117,5 +171,6 @@
 
     <script src="./scripts/script.js"></script>
     <script src="./scripts/footer.js"></script>
+    <script src="./scripts/cohort.js"></script>
 </body>
 </html>
